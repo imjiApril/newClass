@@ -1,0 +1,234 @@
+/*http://meyerweb.com/eric/tools/css/reset/ 초기화*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+li{list-style: none}
+a{text-decoration: none; color:#222;}
+
+
+header, footer, article, section{display: block;}
+
+#whole-wrapper{margin: 0 30px;}
+
+
+/* NOTE: header Nav 시작 */
+.headerNav{position: fixed;z-index: 1000;width: 100%;overflow: hidden;height: 70px;background-color: #ffffff;}
+
+
+
+.logo{float: left;width: auto; height: 60px; margin-top: 5px;}
+.cart{position: absolute; top:15px; right:60px;}
+
+#mainNav{text-align: center; margin-right: 60px;}
+#mainNav ul{margin:auto; height: inherit;}
+#mainNav>ul>li{display: inline-block; line-height: 70px; margin-left: 25px;font-size: 1.2em; color: #3f3f3f; font-weight: lighter;}
+#mainNav>ul>li>a{height: 40px; padding: 15px 23px;background-color: pink;}
+/* NOTE: header Nav 끝 */
+
+/* NOTE: body wrapper*/
+#wrapper{width: 100%; background-color: #f1f1f1; auto; overflow: hidden;}
+
+/* NOTE: mainImg */
+
+#mainImg{width: 100%;height: 600px; margin: 0 auto; overflow: hidden; margin-top: 70px;}
+#mainImg>img{width: 100%; margin-top: -36px;position: relative;}
+.text{position: absolute; z-index: 10;width: 440px; height: 600px;top:70px; right:470px; color: white;}
+.text h2{font-size: 45px;margin: 150px 0 30px 0;}
+.text p{font-size: 25px;margin-bottom: 10px;}
+.text span{display: block;font-size: 25px;margin: 25px 0;}
+.main-btn a{height: 30px;}
+.main-btn a div{float:left;}
+.left-btn div:first-child{width: 40px; height: 30px;background-color: #fff;border-radius: 30px 0 0 30px;
+	background-image: url(../imgs/experience_black.png);background-size: 20px;background-repeat: no-repeat;background-position: center;border-right: 1px solid #f1f1f1;}
+.left-btn div:last-child{width: 150px; height: 30px; background-color: #fff;border-radius: 0 30px 30px 0;line-height: 30px; text-align: center;}
+
+.right-btn div:first-child{width: 40px; height: 30px;margin-left: 10px;background-color: #fff;border-radius: 30px 0 0 30px;
+	background-image: url(../imgs/beobasket_black.png);background-size: 15px;background-repeat: no-repeat;background-position: center;border-right: 1px solid #f1f1f1;}
+.right-btn div:last-child{width: 100px; height: 30px; background-color: #fff;border-radius: 0 30px 30px 0;line-height: 30px; text-align: center;}
+
+
+
+/* NOTE: body-setter */
+#body-setter{width:1290px; margin: auto;}
+
+
+
+/* NOTE: 첫번째 카탈로그(catalog1) */
+.product-catalog1{position: relative;overflow: hidden;padding-bottom: 100px;margin-top: 16px;}
+.product-catalog1>div{float: left; }
+.product-catalog1 a{display:inline-block;}
+
+.p1-1, .p1-2, .p1-5, .p1-6{width: 300px; height: 395px; background-color: #ffffff;}
+.p1-3, .p1-4{width: 630px; height: 395px; background-color: #ffffff;}
+
+#wrapper .p1-1, #wrapper .p1-4{margin: 15px 15px 15px 0;}
+#wrapper .p1-2, #wrapper .p1-5{margin: 15px 15px 15px 15px;}
+#wrapper .p1-3, #wrapper .p1-6{margin: 15px 0px 15px 15px;}
+
+
+/* NOTE: 첫번째 카탈로그 txtBox */
+.p1-txtBox{position: absolute; overflow: hidden;border: 1px solid red;}
+.p1-txtBox h3{margin-top:20px;margin-left: 17px;font-size: 25px;color: #fff;}
+.p1-txtBox>p{margin-top:10px; color: #6f6f6f; width: 115px; height: 30px; border-radius: 0 20px 20px 0; background-color: rgba(255,255,255,0.7);
+							font-size: 11px;font-weight: bold;line-height: 30px;text-align: center;}
+
+/* NOTE: img description */
+.p1-1 h4, .p1-2 h4, .p1-3 h4, .p1-4 h4, .p1-5 h4, .p1-6 h4{
+	font-size: 13px;margin: 17px 0 10px 17px;
+}
+.p1-1 span, .p1-2 span, .p1-5 span, .p1-6 span{
+	display: inline-block;width: 150px; margin: 0px 0px 10px 15px;font-size: 14px;line-height: 150%;background-color: rgb(99, 139, 179)
+}
+.p1-3 span{
+	display: inline-block;width:450px; margin: 0px 0px 10px 15px;font-size: 14px;line-height: 150%;padding-right: 5px;
+	letter-spacing: -0.05em;background-color: rgb(75, 203, 22);
+}
+.p1-4 span{
+	display: inline-block;width:400px; margin: 0px 0px 10px 15px;font-size: 14px;line-height: 150%;padding-right: 5px;
+	letter-spacing: -0.05em;background-color: rgb(75, 203, 22);
+}
+
+/* NOTE: txt-button type 1: 1,2,3,5 */
+.txt-button{margin-left: 20px;}
+/*.txt-button:nth-child(3){margin-left: 50px;}*/
+.txt-button div{float:left;}
+.txt-button div:first-child{
+	width:40px; height: 27px; background-color: #fff; border-radius: 30px 0 0 30px;
+	background-image: url(../imgs/beobasket_black.png); background-size: 20px; background-repeat: no-repeat;
+	background-position: center;border: 1px solid gray;}
+.txt-button div:last-child{
+	width:55px; height: 27px;background-color: #fff; border-radius: 0 30px 30px 0; border: 1px solid gray;
+	text-align: center;line-height: 30px;margin-left: -1px;font-size: 13px;font-weight: bold;
+	}
+	/* NOTE: txt-button 4, 6 */
+.txt-button-other1{margin-left: 30px;}
+.txt-button-other1 div{float:left;}
+.txt-button-other1 div:first-child{
+	width:40px; height: 27px; background-color: #fff; border-radius: 30px 0 0 30px;
+	background-image: url(../imgs/experience_black.png); background-size: 20px; background-repeat: no-repeat;
+	background-position: center;border: 1px solid gray;}
+.txt-button-other1 div:last-child{
+	width:110px; height: 27px;background-color: #fff; border-radius: 0 30px 30px 0; border: 1px solid gray;
+	text-align: center;line-height: 30px;margin-left: -1px;font-size: 13px;font-weight: bold;
+		}
+.txt-button-other2 div{
+	float:left;
+	width: 120px; height: 27px; background-color:#fff; border-radius: 30px 30px 30px 30px; border: 1px solid gray;
+	text-align: center; line-height: 27px; font-size: 13px; font-weight: bold;
+}
+
+
+
+/* NOTE: 두번째 카탈로그(catalog2) */
+
+.ABP{width: 100%; height: 84px; font-size: 61px; text-align: center; clear: both;}
+.product-catalog2{overflow: hidden;padding-bottom: 100px;}
+.product-catalog2 div{float: left;}
+.product-catalog2 a{display:inline-block;}
+
+.p2-txtBox{position: absolute;margin-top:60px;
+	width: 140px; height: 30px; border-radius: 0 20px 20px 0;
+	background-color: rgba(255,255,255,0.7);color: #6f6f6f;
+	font-size: 11px;font-weight: bold;line-height: 30px;text-align: center;}
+
+.p2-1{width: 630px; height: 823px; background-color: #ffffff;}
+.p2-2{width: 630px; height: 393px; background-color: #ffffff;}
+.p2-3{width: 300px; height: 393px; background-color: #ffffff;}
+.p2-4{width: 300px; height: 393px; background-color: #ffffff;}
+#wrapper .p2-1{margin:15px 15px 0 0;}
+#wrapper .p2-2{margin:15px 0 18.5px 15px;}
+#wrapper .p2-3{margin:18.5px 15px 0 15px;}
+#wrapper .p2-4{margin:18.5px 0 0 15px;}
+
+
+
+/* NOTE: 세번째 카탈로그(catalog3) */
+
+.FFT{width: 100%; height: 84px; font-size: 61px; text-align:center; clear: both;}
+.product-catalog3{overflow: hidden;padding-bottom: 50px;}
+.product-catalog3 div{float: left;}
+.p3-1{width: 300px; height: 395px; background-color: #ffffff;}
+.p3-2{width: 300px; height: 395px; background-color: #f1f1f1;}
+.p3-2 div:first-child{height: 300px;border-radius: 50%;overflow: hidden;}
+.p3-3{width: 630px; height: 395px; background-color: #ffffff;}
+.p3-4{width: 630px; height: 395px; background-color: #ffffff;}
+.p3-5{width: 300px; height: 395px; background-color: #f1f1f1;}
+.p3-5 div:first-child{height: 300px;border-radius: 50%;overflow: hidden;}
+.p3-6{width: 300px; height: 395px; background-color: #f1f1f1;}
+.p3-6 div:first-child{height: 300px;border-radius: 50%;overflow: hidden;}
+#wrapper .p3-1, #wrapper .p3-4{margin: 15px 15px 15px 0;}
+#wrapper .p3-2, #wrapper .p3-5{margin: 15px 15px 15px 15px;}
+#wrapper .p3-3, #wrapper .p3-6{margin: 15px 0px 15px 15px;}
+
+
+/* NOTE: footer nav */
+.footer-setter{width: 1290px; margin: 0 auto;}
+.footer-nav{overflow: hidden;float: left; width:300px;}
+.footer-nav:first-child{margin-top:30px;margin-right: 15px;}
+.footer-nav .europe{width: 22px; height: 16px;}
+.footer-nav:nth-child(2),.footer-nav:nth-child(3){margin-top:30px;margin-right: 15px;margin-left: 15px;}
+.footer-nav:nth-child(4){margin-top:30px;margin-left: 15px;}
+
+.footer-nav h4{font-size: 17px;height: 34px; margin: 30px 0;}
+.footer-nav h4 img{width: 34px;height: 34px; vertical-align: middle;}
+
+.footer-nav a{line-height: 30px;}
+.footer-nav a img{width: 34px; height: 34px; margin-top: 15px;}
+.footer-nav img:nth-child(1){margin-right: 16.25px}
+
+
+/* NOTE: footer imgs box */
+#footer-boxes{clear: both;}
+#footer-boxes a img{float: left; width: 300px; height: 300px;}
+#footer-boxes a:first-child>img{margin: 30px 15px 30px 0}
+#footer-boxes a:nth-child(2)>img, #footer-boxes a:nth-child(3)>img{margin: 30px 15px 30px 15px}
+#footer-boxes a:last-child>img{margin: 30px 0px 30px 15px}
+
+
+
+.footer-BAndO{clear:both;width: 100%; height:200px; background-color: #f1f1f1;margin-bottom: 30px}
+.footer-BAndO p{text-align: center;padding-top: 65px;}
+.footer-BAndO p a{font-size: 1.5em }
+.footer-BAndO h4{text-align: center; font-size:0.5em}
+
+#bottom-border{width: 100%; height: 30px; position: fixed; bottom: 0px; background-color: white;}
